@@ -1,0 +1,94 @@
+header {
+	text-align: center;
+	margin-top: 50px;
+	color:aliceblue;
+  
+}
+body{
+  background-image: url(images.jpg);
+  background-size: auto;
+  size: 400px;
+  
+}
+img {
+	width: 50%; /* réduire la largeur de l'image de moitié */
+	height: auto; /* maintenir le ratio de l'image */
+  }
+
+h1 {
+	font-size: 36px;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+section {
+	margin: 0 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.emoji {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.admin a {
+	color: #FFA07A;
+}
+
+.teacher a {
+	color: #ADD8E6;
+}
+
+.student a {
+	color: #108e10;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 14px;
+	color: aliceblue;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+input {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	width: 300px;
+}
+button {
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	width: 100px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #3E8E41;
+}
+/* Style pour le message d'erreur */
+#error-message {
+	color: red;
+	font-weight: bold;
+	margin-top: 20px;
+	display: none;
+}
