@@ -1,5 +1,5 @@
 body {
-    background-image: url(images.jpg);
+    background-image: url(i.jpg);
   }
   
   .container {
@@ -30,7 +30,7 @@ body {
   }
   
   button[type=submit] {
-    background-color:rgb(234, 124, 124);
+    background-color:rgb(45, 45, 246);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

@@ -1,11 +1,12 @@
+
 header {
 	text-align: center;
 	margin-top: 50px;
-	color:aliceblue;
-  
+	color:rgb(1, 10, 18); 
 }
+
 body{
-  background-image: url(images.jpg);
+  background-image: url(i.jpg);
   background-size: auto;
   size: 400px;
   
@@ -38,15 +39,15 @@ section {
 }
 
 .admin a {
-	color: #FFA07A;
+	color: #822c0a;
 }
 
 .teacher a {
-	color: #ADD8E6;
+	color: #1086ad;
 }
 
 .student a {
-	color: #108e10;
+	color: #041d04;
 }
 
 a {
