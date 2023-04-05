@@ -4,7 +4,7 @@
 let express = require('express');
 let mustache = require('mustache-express');
 
-let model = require('./model');
+let model = require('./modelsubject');
 let app = express();
 
 
@@ -72,3 +72,28 @@ app.post('/login', (req, res) => {
   app.get('/new_user', (req, res) => {
     res.render('new_user');
   });
+  app.get('/create', is_authenticated, (req, res) => {
+    res.render('create');
+  })
+  app.get('/', (req, res) => {
+    res.render('index');
+  })
+  /**** Routes pour modifier les données ****/
+
+// Fonction qui facilite la création d'une recette
+function post_data_to_datasubject(req) {
+    return {
+      id: req.body.id,
+      title: req.body.title, 
+      keyword:req.body.keyword
+  }
+}
+  app.post('/create', is_authenticated, (req, res) => {
+    let id = model.create(post_data_to_datasubject(req));
+    res.redirect('/read/' + id);
+  });
+  
+/* Retourne une page principale avec le nombre de recettes */
+
+  
+  app.listen(3000, () => console.log('listening on http://localhost:3000'));
