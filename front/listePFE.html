@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des PEF</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+        color: #333333;
+      }
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #dddddd;
+      }
+      th {
+        background-color: #333333;
+        color: #ffffff;
+      }
+      .button {
+        display: inline-block;
+        padding: 8px 12px;
+        margin: 5px;
+        border: none;
+        border-radius: 4px;
+        background-color: #333333;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #4c4c4c;
+      }
+      .delete {
+        background-color: #ff4d4d;
+      }
+      .delete:hover {
+        background-color: #ff6666;
+      }
+      .edit {
+        background-color: #1e90ff;
+      }
+      .edit:hover {
+        background-color: #4d94ff;
+      }
+      .validate {
+        background-color: #00cc00;
+      }
+      .validate:hover {
+        background-color: #00e600;
+      }
+    </style>
+</head>
+<body>
+<h1>Liste des PEF</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Resumé</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>PEF 1</td>
+        <td>11</td>
+        <td>4</td>
+        <td>
+            <button class="button delete">Supprimer</button>
+            <button class="button validate">Valider</button>
+        </td>
+    </tr>
+    <tr>
+        <td>PEF 2</td>
+        <td>5</td>
+        <td>15 €</td>
+        <td>
+            <button class="button delete">Supprimer</button>
+            <button class="button edit">Modifier</button>
+            <button class="button validate">Valider</button>
+        </td>
+    </tr>
+    <tr>
+        <td>PEF 3</td>
+        <td>2</td>
+        <td>20 €</td>
+        <td>
+            <button class="button delete">Supprimer</button>
+            <button class="button edit">Modifier</button>
+            <button class="button validate">Valider</button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

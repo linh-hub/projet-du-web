@@ -1,0 +1,44 @@
+body {
+	font-family: Arial, sans-serif;
+	background-image:url(images.jpg);
+	text-align: center;
+	margin-top: 50px;
+	padding: 5px 10px;
+}
+
+h1 {
+	color: #333;
+	margin-top:auto;
+
+
+}
+
+#signup-form {
+	margin-top: 20px;
+}
+
+#signup-form form {
+	display: inline-block;
+	text-align: left;
+}
+
+#signup-form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#signup-form input[type="text"],
+#signup-form input[type="email"],
+#signup-form input[type="password"] {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#signup-form button {
+	padding: 5px 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}

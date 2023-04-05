@@ -1,24 +1,68 @@
 {
-    "0": {
-        "id": 0,
-        "title": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
-        "summary":"",
-        "keyword": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
-        
-      },
-      "1": {
-        "id": 1,
-        "title": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
-        "summary":"dfghjk",
-        "keyword": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
-        
-        
-      },
-      "2": {
-        "id": 1,
-        "title": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
-        "summary":"",
-        "keyword": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
-        
-      }
+  "0": {
+    "id": 0,
+    "title": " prediction du taux de criminalité a la l'aide de la methode k",
+    "summary": " dans ce projet, un système est développé pour évaluer et prédire le taux de criminalité dans une certaine zone géographique. Le système sera conçu à l'aide d'un algorithme d'exploration de données (K-means) pour faire des prédictions des taux de criminalité. Cela signifie donc que le système recevra suffisamment de données pertinentes pour pouvoir faire des prédictions précises.L'algorithme d'exploration de données peut rassembler des complices et des groupes criminels organisés en détectant les modèles de criminalité pertinents grâce à des liens cachés, à la prédiction de liens et à l'analyse statistique des données sur la criminalité. "
+  },
+  "1": {
+    "id": 1,
+    "title": "Système d'authentification électronique utilisant le code QR et l'OTP",
+    "summary": "Ce sujet de projet informatique expliquera la conception d'un système d'authentification électronique utilisant le code QR et l'OTP afin d'améliorer la sécurité financière. En utilisant ce système, il sera difficile pour les escrocs de pirater des comptes via un surf sur l'épaule et une connexion accidentelle."
+  },
+  "2": {
+    "id": 2,
+    "title": "Système d'enchères en ligne sécurisé",
+    "summary": "Les enchères en ligne offrent aux acheteurs et aux vendeurs une plate-forme pour rencontrer, vendre et acheter des produits via des enchères de prix. Dans cette méthode, il y a toujours un prix de départ et une heure de fin pour les offres.\n\nLa plateforme est protégée contre la fraude grâce à la classification binaire. Si les utilisateurs souhaitent acheter un produit en ligne, ils fourniront leurs informations personnelles, y compris l'adresse e-mail, le numéro de licence, le numéro PAN, etc."
+  },
+  "3": {
+    "id": 3,
+    "title": "Système d'enchères en ligne sécurisé",
+    "summary": "Les enchères en ligne offrent aux acheteurs et aux vendeurs une plate-forme pour rencontrer, vendre et acheter des produits via des enchères de prix. Dans cette méthode, il y a toujours un prix de départ et une heure de fin pour les offres.\n\nLa plateforme est protégée contre la fraude grâce à la classification binaire. Si les utilisateurs souhaitent acheter un produit en ligne, ils fourniront leurs informations personnelles, y compris l'adresse e-mail, le numéro de licence, le numéro PAN, etc."
+  },
+  "4": {
+    "id": 4,
+    "title": "Moteur de recherche utilisant l'annotation Web",
+    "summary": "C'est l'un des sujets de projet informatique les plus intéressants. Dans ce projet, le moteur de recherche sera créé à l'aide d'une annotation Web."
+  },
+  "5": {
+    "id": 5,
+    "title": "Programme OpenCV C ++ pour la détection de visage",
+    "summary": "ce sujet de projet informatique consiste à créer un logiciel de détection de visage à l'aide de la bibliothèque OpenCV. Le logiciel sera conçu de manière à ce que le programme de détection de visage détecte les visages humains dans les vidéos en direct à partir de la webcam ou des fichiers vidéo stockés à l'intérieur de l'ordinateur."
+  },
+  "6": {
+    "id": 6,
+    "title": "Droid d'actualités publiques",
+    "summary": "cette idée de sujet de projet informatique se concentrera sur le développement d'un droïde de nouvelles publiques (un logiciel qui donne aux utilisateurs des informations sur les tendances et les événements). Le logiciel comprend un frontend (Android Studio) et un backend (SQL Server). C'est aussi un module pour l'administrateur et un autre module pour l'utilisateur."
+  },
+  "7": {
+    "id": 7,
+    "title": "Système d'économie de batterie Andriod",
+    "summary": "Ce sujet de projet informatique traite de la conception d'un économiseur de batterie Android. Le système aidera à examiner les données d'utilisation de la batterie Android à partir des classes intégrées et à développer une liste combinée d'applications qui draineront l'énergie du téléphone Android. Grâce à ce système, un utilisateur peut connaître le niveau de batterie d'un téléphone Android."
+  },
+  "8": {
+    "id": 8,
+    "title": "Créateur de livres électroniques en ligne",
+    "summary": "Ce projet implique le développement d'un créateur de livres électroniques en ligne. Le créateur de livres électroniques en ligne permet aux étudiants de créer des livres électroniques gratuitement. Il comprend deux modules comprenant la connexion administrateur et la connexion auteur (utilisateur). Ici, l'administrateur aura la possibilité de recevoir des demandes d'auteurs, d'authentifier leurs détails, d'évaluer les livres électroniques terminés et de traiter la demande en envoyant les livres électroniques aux auteurs par courrier électronique."
+  },
+  "9": {
+    "id": 9,
+    "title": "Évaluation de la performance académique",
+    "summary": "Dans ce projet, un système d'évaluation qui évalue la performance académique de l'étudiant est créé en utilisant la méthode de la logique floue. En utilisant la méthode de la logique floue, les élèves prendront en compte trois critères, notamment le nom, la fréquentation, les notes internes et les notes externes.\n\n"
+  },
+  "10": {
+    "id": 10,
+    "title": "Mouvement du curseur sur le mouvement de l'objet",
+    "summary": "Ce projet implique le développement d'un curseur capable de se déplacer sur le bureau de l'ordinateur et d'exécuter des instructions basées sur des gestes de la main. Le mouvement de l'objet du système sera conçu en utilisant RVB (rouge, vert et bleu) afin qu'il puisse détecter l'objet qui fonctionnera comme la souris."
+  },
+  "11": {
+    "id": 11,
+    "title": "Reconnaissance de symboles à l'aide de MATLAB",
+    "summary": "Dans ce projet, les élèves construiront un système qui identifiera tout symbole que les utilisateurs y insèrent en appliquant des algorithmes.\n\nVoici comment le système fonctionne: lorsqu'un utilisateur insère une image dans le système, il utilisera la fonction RVB pour convertir les objets en images en niveaux de gris. Ensuite, le système convertira les images en niveaux de gris en images en noir et blanc. Lorsque cela se produit, le système appliquera un traitement d'image pour éliminer les objets indésirables et les interférences environnementales."
+  },
+  "12": {
+    "id": 12,
+    "title": "Portefeuille mobile avec paiement marchand via Android",
+    "summary":"C'est l'une des idées de sujet de projet informatique les plus intéressantes. Dans ce projet, un code QR sera développé pour promouvoir les transactions en espèces entre acheteurs et vendeurs. En d'autres termes, ce système offre une sécurité et une plate-forme efficace pour les transactions en espèces. Lors de toute transaction, le système générera un code QR unique et tous les mots de passe seront cryptés par l'algorithme de cryptage AES. "
+  }
+
 }
