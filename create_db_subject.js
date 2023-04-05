@@ -12,10 +12,10 @@ let load = function(filename) {
   db.prepare('DROP TABLE IF EXISTS subject').run();
   
 
-  db.prepare('CREATE TABLE subject (id INTEGER PRIMARY KEY AUTOINCREMENT, id INTERGER,  title TEXT,summary TEXT, keyword TEXT)').run();
+  db.prepare('CREATE TABLE subject (id INTEGER PRIMARY KEY AUTOINCREMENT, id INTERGER,  title TEXT,summary TEXT)').run();
   
 
-  let insert = db.prepare('INSERT INTO subject VALUES (@id, @title, @keyword)');
+  let insert = db.prepare('INSERT INTO subject VALUES (@id, @title, @summary)');
   
 
   let transaction = db.transaction((subjects) => {

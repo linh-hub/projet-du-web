@@ -23,7 +23,7 @@ app.set('views', './views');
 
 
 function is_authenticated(req, res, next) {
-  if (req.session.user !== undefined) {
+  if (req.session.student !== undefined) {
     return next();
   }
   res.status(401).send('Authentication required');
@@ -31,29 +31,29 @@ function is_authenticated(req, res, next) {
 
 
 app.use(function(req, res, next) {
-  if (req.session.user !== undefined) {
+  if (req.session.student !== undefined) {
     res.locals.authenticated = true;
-    res.locals.name = req.session.name;
+    res.locals.id = req.session.id;
   }
   return next();
 })
 
 app.post('/login', (req, res) => {
-    const user = model.login(req.body.user, req.body.password);
+    const student = model.login(req.body.student, req.body.password);
     if (user != -1) {
-      req.session.user = user;
-      req.session.name = req.body.user;
+      req.session.student = student;
+      req.session.firstname = req.body.user;
       res.redirect('/');
     } else {
       res.redirect('/login');
     }
   });
   
-  app.post('/new_user', (req, res) => {
-    const user = model.new_user(req.body.user, req.body.password);
+  app.post('/new_student', (req, res) => {
+    const user = model.new_student(req.body.student, req.body.password);
     if (user != -1) {
-      req.session.user = user;
-      req.session.name = req.body.user;
+      req.session.student = student;
+      req.session.firstname = req.body.user;
       res.redirect('/');
     } else {
       res.redirect('/');
@@ -72,28 +72,16 @@ app.post('/login', (req, res) => {
   app.get('/new_user', (req, res) => {
     res.render('new_user');
   });
+  app.get('/read/:id', (req, res) => {
+    let entry = model.read(req.params.id);
+    res.render('read', entry);
+  });
+  
   app.get('/create', is_authenticated, (req, res) => {
     res.render('create');
   })
-  app.get('/', (req, res) => {
-    res.render('index');
-  })
-  /**** Routes pour modifier les données ****/
 
-// Fonction qui facilite la création d'une recette
-function post_data_to_datasubject(req) {
-    return {
-      id: req.body.id,
-      title: req.body.title, 
-      keyword:req.body.keyword
-  }
-}
-  app.post('/create', is_authenticated, (req, res) => {
-    let id = model.create(post_data_to_datasubject(req));
-    res.redirect('/read/' + id);
-  });
-  
-/* Retourne une page principale avec le nombre de recettes */
+ 
 
   
   app.listen(3000, () => console.log('listening on http://localhost:3000'));

@@ -4,37 +4,60 @@
 const Sqlite = require('better-sqlite3');
 
 let db = new Sqlite('db.sqlite');
-//Cette fonction renvoie null si l'identifiant n'existe pas.
- 
-exports.read = (id) => {
-  let found = db.prepare('SELECT * FROM subject WHERE id = ?').get(id);
-  if (found !== undefined) {
-    found.ingredients = db.prepare('SELECT name FROM ingredient WHERE recipe = ? ORDER BY rank').all(id);
-    found.stages = db.prepare('SELECT description FROM stage WHERE recipe = ? ORDER BY rank').all(id);
-    return found;
-  } else {
-    return null;
-  }
-};
-//Cette fonction retourne l'identifiant de la recette créée.
 
-exports.create = function(recipe) {
-  let id = db.prepare('INSERT INTO subject (id,title, summary, keyword) VALUES (@id, @title, @summary, @keyword)').run(subject).lastInsertRowid;
 
-  let insert1 = db.prepare('INSERT INTO ingredient VALUES (@recipe, @rank, @name)');
-  let insert2 = db.prepare('INSERT INTO stage VALUES (@recipe, @rank, @description)');
 
-  let transaction = db.transaction((subject) => {
-    for (let j = 0; j < subject.length; j++) {
-      id.run({recipe: id, rank: j, name: recipe.ingredients[j].name});
-    }
-    for (let j = 0; j < recipe.stages.length; j++) {
-      insert2.run({recipe: id, rank: j, description: recipe.stages[j].description});
+db.prepare('DROP TABLE IF EXISTS subjects').run();
+db.prepare('CREATE TABLE subject ' +
+           '(id INTEGER PRIMARY KEY AUTOINCREMENT,' +
+           ' title TEXT, summary TEXT)').run();
+
+exports.load = function(filename) {
+  const subject = JSON.parse(fs.readFileSync(filename));
+  let insert = db.prepare('INSERT INTO subjects VALUES ' +
+                          '(@id, @title, @summary,');
+  let clear_and_insert_many = db.transaction((subjects) => {
+    db.prepare('DELETE FROM subjects');
+    for (let id of Object.keys(subjects)) {
+      insert.run(subjects[id]);
     }
   });
+  clear_and_insert_many(subjects);
+  return true;
+};
 
-  transaction(subject);
-  return id;
+
+exports.save = function(filename) {
+  let subject_list = db.prepare('SELECT * FROM subjects ORDER BY id').all();
+  let subject = {};
+  for (let subject of subject_list) {
+    subjects[subject.id] = subject;
+  }
+  fs.writeFileSync(filename, JSON.stringify(subjects));
+};
+ 
+
+exports.read = function(id) {
+  let result = db.prepare('SELECT * FROM subjects WHERE id = ?').get(id);
+  if(result === undefined) return null;
+  return result;
+};
+
+exports.create = function(id, title, summary) {
+  let movie = {
+    id: id,
+    title: title,
+    summary: summary,
+    
+  };
+  let result = db.prepare('INSERT INTO subject ' +
+                          '(id,title, summary) ' +
+                          'VALUES (@id,@title, @summary)').run(subject);
+  return result.lastInsertRowid;
+};
+exports.list = function() {
+  let movie_list = db.prepare('SELECT * FROM subject ORDER BY id').all();
+  return subject_list;
 }
 
 exports.login = function(user, password) {
