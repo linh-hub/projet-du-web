@@ -1,0 +1,73 @@
+{
+    "0": {
+      "id": "0",
+      "firstname": "linh",
+      "lastname": "pham",
+      "email": "ngoclinhp1206@etu-amu.com",
+      "role": 2
+      
+    },
+    "1": {
+        "id": "1",
+        "firstname": "awa",
+        "lastname": "boua",
+        "email": "bouaawa123@etu-amu.com",
+        "role": 2
+    },
+    "2": {
+        "id": "2",
+        "firstname": "kevin",
+        "lastname": "heart",
+        "email": "kevinheart@etu-amu.com",
+        "role": 2
+    },
+    "3": {
+        "id": "3",
+        "firstname": "adam",
+        "lastname": "lin",
+        "email": "adamlin@etu-amu.com",
+        "role": 2
+      },
+      "4": {
+        "id": "4",
+        "firstname": "taylor",
+        "lastname": "swift",
+        "email": "taytay@etu-amu.com",
+        "role": 2
+      },
+      "5": {
+        "id": "5",
+        "firstname": "toto",
+        "lastname": "tata",
+        "email": "toto@etu-amu.com",
+        "role": 2
+      },
+      "6": {
+        "id": "6",
+        "firstname": "lili",
+        "lastname": "land",
+        "email": "lililand@etu-amu.com",
+        "role": 2
+      },
+      "7": {
+        "id": "7",
+        "firstname": "nathan",
+        "lastname": "lee",
+        "email": "nathan@etu-amu.com",
+        "role": 2
+      },
+      "8": {
+        "id": "8",
+        "firstname": "alex",
+        "lastname": "alex",
+        "email": "alex@enseig-amu.com",
+        "role": 1
+      },
+      "9": {
+        "id": "9",
+        "firstname": "win",
+        "lastname": "win",
+        "email": "winwin@enseig-amu.com",
+        "role": 1
+      }
+}
