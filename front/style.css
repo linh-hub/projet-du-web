@@ -1,5 +1,5 @@
 body {
-    background-image: url(i.jpg);
+    background-color: #dddddd;
   }
   
   .container {
@@ -17,8 +17,9 @@ body {
     font-size: 18px;
     font-weight: bold;
   }
-  
-  input[type=email],
+
+  input[type  = email],
+  input[type=text],
   input[type=password] {
     width: 100%;
     padding: 12px 20px;

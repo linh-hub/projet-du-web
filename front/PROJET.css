@@ -6,15 +6,12 @@ header {
 }
 
 body{
-  background-image: url(i.jpg);
+  background-color:darkgray ;
   background-size: auto;
   size: 400px;
   
 }
-img {
-	width: 50%; /* réduire la largeur de l'image de moitié */
-	height: auto; /* maintenir le ratio de l'image */
-  }
+
 
 h1 {
 	font-size: 36px;
@@ -38,9 +35,6 @@ section {
 	margin-bottom: 20px;
 }
 
-.admin a {
-	color: #822c0a;
-}
 
 .teacher a {
 	color: #1086ad;
