@@ -38,6 +38,7 @@ section {
 
 .teacher a {
 	color: #1086ad;
+	align-content: space-around;
 }
 
 .student a {
