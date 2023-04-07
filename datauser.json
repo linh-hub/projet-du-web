@@ -3,7 +3,7 @@
       "id": "0",
       "firstname": "linh",
       "lastname": "pham",
-      "email": "ngoclinhp1206@etu-amu.com",
+      "email": "ngoclinhp1206@etu-amu.fr",
       "role": 2
       
     },
@@ -11,63 +11,84 @@
         "id": "1",
         "firstname": "awa",
         "lastname": "bouare",
-        "email": "bouareawa123@etu-amu.com",
+        "email": "bouareawa123@etu-amu.fr",
         "role": 2
     },
     "2": {
         "id": "2",
         "firstname": "kevin",
         "lastname": "heart",
-        "email": "kevinheart@etu-amu.com",
+        "email": "kevinheart@etu-amu.fr",
         "role": 2
     },
     "3": {
         "id": "3",
         "firstname": "adam",
         "lastname": "lin",
-        "email": "adamlin@etu-amu.com",
+        "email": "adamlin@etu-amu.fr",
         "role": 2
       },
       "4": {
         "id": "4",
         "firstname": "taylor",
         "lastname": "swift",
-        "email": "taytay@etu-amu.com",
+        "email": "taytay@etu-amu.fr",
         "role": 2
       },
       "5": {
         "id": "5",
         "firstname": "toto",
         "lastname": "tata",
-        "email": "toto@etu-amu.com",
+        "email": "toto@etu-amu.fr",
         "role": 2
       },
       "6": {
         "id": "6",
         "firstname": "lili",
         "lastname": "land",
-        "email": "lililand@etu-amu.com",
+        "email": "lililand@etu-amu.fr",
         "role": 2
       },
       "7": {
         "id": "7",
         "firstname": "nathan",
-        "lastname": "lee",
-        "email": "nathan@etu-amu.com",
+        "lastname": "mufuta",
+        "email": "nathan@etu-amu.fr",
         "role": 2
       },
       "8": {
         "id": "8",
-        "firstname": "alex",
-        "lastname": "alex",
-        "email": "alex@enseig-amu.com",
+        "firstname": "shantanu",
+        "lastname": "Das",
+        "email": "shantanu.das@univ-amu.fr",
         "role": 1
       },
       "9": {
         "id": "9",
-        "firstname": "win",
-        "lastname": "win",
-        "email": "winwin@enseig-amu.com",
+        "firstname": "thomas",
+        "lastname": "schatz",
+        "email": "thomas.schatz@univ-amu.fr",
         "role": 1
-      }
+      },
+  "10": {
+    "id": "10",
+    "firstname": "soumeya",
+    "lastname": "hernane",
+    "email": "soumeya.hernane@univ-amu.fr",
+    "role": 1
+  },
+  "11": {
+    "id": "11",
+    "firstname": "François",
+    "lastname": "hamonic",
+    "email": "francois.hamonic@univ-amu.fr",
+    "role": 1
+  },
+  "12": {
+    "id": "12",
+    "firstname": "nathan",
+    "lastname": "lhote",
+    "email": "nathan.lhote@univ-amu.fr",
+    "role": 1
+  }
 }

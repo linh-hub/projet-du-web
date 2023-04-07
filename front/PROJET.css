@@ -6,13 +6,13 @@ header {
 }
 
 body{
-  background-color:darkgray ;
-  background-size: auto;
-  size: 400px;
-  
+  background-image: url("uni.jpg");
+  background-size:auto;
 }
-
-
+img{
+	width: 564px;
+	width:1002px;
+}
 h1 {
 	font-size: 36px;
 }

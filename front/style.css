@@ -1,5 +1,7 @@
 body {
-    background-color: #dddddd;
+    background-image: url("uni.jpg");
+   background-size:auto;
+
   }
   
   .container {
@@ -8,8 +10,26 @@ body {
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
+  #signup-form{
+    width: 50%;
+    margin: 100px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .register-box{
+    width: 50%;
+    margin: 100px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+  }
+
   
   h1 {
+    text-align: center;
+  }
+  h2{
     text-align: center;
   }
   
@@ -31,7 +51,7 @@ body {
   }
   
   button[type=submit] {
-    background-color:rgb(45, 45, 246);
+    background-color:darksalmon;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
