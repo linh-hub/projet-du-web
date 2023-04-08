@@ -19,7 +19,7 @@ app.use(cookieSession({
 
 app.engine('html', mustache());
 app.set('view engine', 'html');
-app.set('views', './font');
+app.set('views', './views');
 
 
 function is_authenticated(req, res, next) {
@@ -129,4 +129,4 @@ app.post('/login', (req, res) => {
  
 
   
-  app.listen(3002, () => console.log('listening on http://localhost:3000'));
+  app.listen(3003, () => console.log('listening on http://localhost:3000'));
