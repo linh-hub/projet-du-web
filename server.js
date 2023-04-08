@@ -19,7 +19,7 @@ app.use(cookieSession({
 
 app.engine('html', mustache());
 app.set('view engine', 'html');
-app.set('views', './views');
+app.set('views', './font');
 
 
 function is_authenticated(req, res, next) {
