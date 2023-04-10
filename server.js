@@ -127,3 +127,38 @@ app.post('/login', (req, res) => {
   });
 
   app.listen(3003, () => console.log('listening on http://localhost:3000'));
+  const express = require('express');
+  const low = require('lowdb');
+  const FileSync = require('lowdb/adapters/FileSync');
+  const bodyParser = require('body-parser');
+  const app = express();
+  const port = 3000;
+
+  const adapter = new FileSync('db.json');
+  const db = low(adapter);
+
+  db.defaults({ sujets: [] }).write();
+
+  app.use(express.static('public'));
+  app.use(bodyParser.urlencoded({ extended: false }));
+  app.use(bodyParser.json());
+
+  app.get('/sujets', (req, res) => {
+    const sujets = db.get('sujets').value();
+    res.send(sujets);
+  });
+
+  app.post('/sujets', (req, res) => {
+    db.get('sujets').push(req.body).write();
+    res.send(req.body);
+  });
+
+  app.delete('/sujets/:id', (req, res) => {
+    const id = parseInt(req.params.id, 10);
+    db.get('sujets').remove({ id }).write();
+    res.sendStatus(200);
+  });
+
+  app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+  });

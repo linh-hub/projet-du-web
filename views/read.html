@@ -1,39 +1,69 @@
-{{> header}}
-  <div class="row row-cols-1 row-cols-sm-2">
-    <div class="col">
-    <h1>{{title}}</h1>
-    {{#authenticated}}
-    <p>
-    <a class="btn btn-primary" href="/update/{{id}}">Modifier</a>
-    <a class="btn btn-primary" href="/delete/{{id}}">Supprimer</a>
-    </p>
-    {{/authenticated}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste des sujets</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
 
-    <p>{{description}}</p>
-    <p>Durée : {{duration}}</p>
-    </div>
-    <div class="col">
-    <img class="img-fluid" src="{{img}}">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-    Ingrédients :
-    <ul>
-      {{#ingredients}}
-        <li>{{name}}</li>
-      {{/ingredients}}
-    </ul>
-    </div>
-  </div>
-  <div class="row pt-3">
-    <div class="col">
-    Étapes :
-    <ol>
-      {{#stages}}
-        <li>{{description}}</li>
-      {{/stages}}
-    </ol>
-    </div>
-  </div>
-{{> footer}}
+h1 {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#liste-sujets {
+    width: 60%;
+    margin: 30px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+<h1>Liste des sujets écrits</h1>
+<div id="liste-sujets">
+  <ul id="sujets">
+    <!-- Les sujets seront ajoutés ici par JavaScript -->
+  </ul>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sujets = [
+        { id: 1, titre: "Sujet 1", resume: "Résumé du sujet 1" },
+        { id: 2, titre: "Sujet 2", resume: "Résumé du sujet 2" },
+        { id: 3, titre: "Sujet 3", resume: "Résumé du sujet 3" },
+    ];
+
+    const listeSujets = document.getElementById("sujets");
+
+    sujets.forEach(function (sujet) {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${sujet.titre}</strong><br>${sujet.resume}`;
+        listeSujets.appendChild(li);
+    });
+});
+
+</script>
+</body>
+</html>

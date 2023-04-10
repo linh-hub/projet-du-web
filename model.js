@@ -25,7 +25,6 @@ exports.read_demand_teacher = (id) => {
       return null;
     }
   };
-
 //create a demand from id(student)
 exports.create_demand = function(id, receiveemail, title,content) {
    //find in user where email = receiveemail -> get id -> this id will be receiveid in demand table

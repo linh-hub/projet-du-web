@@ -1,14 +1,105 @@
-{{> header}}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>sujets</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
 
-  <div class="row row-cols-1 row-cols-sm-2">
-    <div class="col">
-      <h1> Supprimer une recette </h1>
-      <p>Êtes-vous sûr de vouloir supprimer la recette "{{title}}" ?</p>
-      <form class="form-inline" action="/delete/{{id}}" method="post">
-        <input class="form-control btn btn-primary mr-2" type="submit" value="Effacer">
-        <a class="form-control btn btn-primary" href="/read/{{id}}">Annuler<a>
-      </form>
-    </div>
-  </div>
+        }
 
-{{> footer}}
+        #container {
+            width: 50%;
+            margin: 100px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color:  #2c3e50;;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const formSujet = document.getElementById("form-sujet");
+    const supprimerBtn = document.getElementById("supprimer");
+
+    formSujet.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const sujet = document.getElementById("sujet").value;
+        const resume = document.getElementById("resume").value;
+
+        if (sujet && resume) {
+            supprimerBtn.style.display = "block";
+        } else {
+            supprimerBtn.style.display = "none";
+        }
+    });
+
+    supprimerBtn.addEventListener("click", function () {
+        const confirmer = confirm("Voulez-vous supprimer ce sujet ?");
+
+        if (confirmer) {
+            formSujet.reset();
+            supprimerBtn.style.display = "none";
+            alert("Le sujet a été supprimé.");
+        }
+    });
+});
+
+    </script>
+</head>
+<body>
+<div id="container">
+    <h1>subjet</h1>
+    <form id="form-sujet">
+        <label for="sujet">Subjet :</label>
+        <input type="text" id="sujet" name="sujet" placeholder="theme">
+
+        <label for="resume">Résumé :</label>
+        <textarea id="resume" name="resume" placeholder="Résumé du theme"></textarea>
+
+        <input type="submit" value="Soumettre">
+    </form>
+    <button id="supprimer" style="display:none;">Supprimer</button>
+</div>
+</body>
+</html>
