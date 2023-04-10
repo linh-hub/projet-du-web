@@ -52,8 +52,8 @@ app.post('/login', (req, res) => {
   app.post('/new_user', (req, res) => {
     const user = model.new_user(req.body.firstname, req.body.lastname, req.body.email);
     if (user != -1) {
-      req.session.user = user;
-      req.session.firstname = firstname;
+      //req.session.users = users;
+      req.session.firstname = req.body.firstname;
       req.session.lastname = req.body.lastname;
       req.session.email = req.body.email;
       res.redirect('/');
@@ -89,9 +89,13 @@ app.post('/login', (req, res) => {
     res.render('create');
   });
 
-  app.get('/update/:id', is_authenticated, (req, res) => {
+  app.get('/update_status/:id', is_authenticated, (req, res) => {
     let entry = model.read(req.params.id);
-    res.render('update', entry);
+    res.render('update_status', entry);
+  });
+  app.get('/update_demand/:id', is_authenticated, (req, res) => {
+    let entry = model.read(req.params.id);
+    res.render('update_demand', entry);
   });
   
   app.get('/delete/:id', is_authenticated, (req, res) => {
@@ -115,7 +119,12 @@ app.post('/login', (req, res) => {
     res.redirect('/read/' + id);
   });
   
-  app.post('/update/:id', is_authenticated, (req, res) => {
+  app.post('/update_status/:id', is_authenticated, (req, res) => {
+    let id = req.params.id;
+    model.update(id, post_data_to_demand(req));
+    res.redirect('/read/' + id);
+  });
+  app.post('/update_demand/:id', is_authenticated, (req, res) => {
     let id = req.params.id;
     model.update(id, post_data_to_demand(req));
     res.redirect('/read/' + id);
