@@ -1,1 +1,12 @@
-[  {    "id": 1,    "role": "stu"  },  {    "id": 2,    "role": "tea"  }]
+{
+    "0": {
+      "id": "1",
+      "role": "teacher"
+
+
+    },
+    "1": {
+        "id": "2",
+        "role": "student"
+      }
+}

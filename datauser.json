@@ -1,23 +1,93 @@
-[
-  {
-    "id": 1,
-    "firstname": "qsdsq",
-    "lastname": "dsqdfsdfsddfssqd",
-    "email": "sdqdqs",
-    "role": 1
-  },
-  {
-    "id":2,
-    "firstname": "dsqdqs",
-    "lastname": "qdsqdsq",
-    "email": "qdqsddqsd",
+{
+  "0": {
+    "id": "0",
+    "firstname": "linh",
+    "lastname": "pham",
+    "email": "linhpham@etu-amu.fr",
     "role": 2
   },
-  {
-    "id":3,
-    "firstname": "dqsdq",
-    "lastname": "dqdsqdza",
-    "email": "dsqdqs",
+  "1": {
+    "id": "1",
+    "firstname": "awa",
+    "lastname": "boua",
+    "email": "awaboua@etu-amu.fr",
+    "role": 2
+  },
+  "2": {
+    "id": "2",
+    "firstname": "nam",
+    "lastname": "nam",
+    "email": "namnam@etu-amu.fr",
+    "role": 2
+  },
+  "3": {
+    "id": "3",
+    "firstname": "toto",
+    "lastname": "tata",
+    "email": "tototata@etu-amu.fr",
+    "role": 2
+  },
+  "4": {
+    "id": "4",
+    "firstname": "lele",
+    "lastname": "han",
+    "email": "lelehan@etu-amu.fr",
+    "role": 2
+  },
+  "5": {
+    "id": "5",
+    "firstname": "panda",
+    "lastname": "kungfu",
+    "email": "kungfupanda@etu-amu.fr",
+    "role": 2
+  },
+  "6": {
+    "id": "6",
+    "firstname": "lili",
+    "lastname": "land",
+    "email": "lililand@etu-amu.fr",
+    "role": 2
+  },
+  "7": {
+    "id": "7",
+    "firstname": "nathan",
+    "lastname": "mufuta",
+    "email": "nathan@etu-amu.fr",
+    "role": 2
+  },
+  "8": {
+    "id": "8",
+    "firstname": "shantanu",
+    "lastname": "Das",
+    "email": "shantanu.das@univ-amu.fr",
+    "role": 1
+  },
+  "9": {
+    "id": "9",
+    "firstname": "thomas",
+    "lastname": "schatz",
+    "email": "thomas.schatz@univ-amu.fr",
+    "role": 1
+  },
+  "10": {
+    "id": "10",
+    "firstname": "soumeya",
+    "lastname": "hernane",
+    "email": "soumeya.hernane@univ-amu.fr",
+    "role": 1
+  },
+  "11": {
+    "id": "11",
+    "firstname": "François",
+    "lastname": "hamonic",
+    "email": "francois.hamonic@univ-amu.fr",
+    "role": 1
+  },
+  "12": {
+    "id": "12",
+    "firstname": "nathan",
+    "lastname": "lhote",
+    "email": "nathan.lhote@univ-amu.fr",
     "role": 1
   }
-]
+}
