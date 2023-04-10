@@ -6,28 +6,20 @@ const Sqlite = require('better-sqlite3');
 let db = new Sqlite('db.sqlite');
 
 //read demand form id(student version)
-exports.get_demand_list_student_by_id_student = (id) => {
+exports.read = (id) => {
   let found = db.prepare('SELECT role FROM users WHERE id = ?').get(id);
-  if (found == 2) {
-    found.demand = db.prepare('SELECT * FROM demand WHERE sendid = ? ').all(id);
+  if (found == student) {
+    found.demand = db.prepare('SELECT * FROM demands WHERE sendid = ? ').all(id);
     return found;
   } else {
-    return null;
+    found.demand = db.prepare('SELECT * FROM demands WHERE receiveid = ? ').all(id);
   }
 };
-//read demand from id(teacher version)
-exports.read_demand_teacher = (id) => {
-    let found = db.prepare('SELECT role FROM users WHERE id = ?').get(id);
-    if (found == 1) {
-      found.demand = db.prepare('SELECT * FROM demand WHERE receiveid = ? ').all(id);
-      return found;
-    } else {
-      return null;
-    }
-  };
+
+
 
 //create a demand from id(student)
-exports.create_demand = function(id, receiveemail, title,content) {
+exports.create = function() {
    //find in user where email = receiveemail -> get id -> this id will be receiveid in demand table
     
     
@@ -36,13 +28,13 @@ exports.create_demand = function(id, receiveemail, title,content) {
 }
 //update status from id(teacher approve the idea)
 exports.update_status = function(id){
-    let check = db.prepare('SELECT status FROM demand WHERE id = receiveid').get(id);
+    let check = db.prepare('UPDATE status FROM demand WHERE id = receiveid').get(id);
     // insert into demand status has changed
 
 }
 
 
-//change topic from student
+//change topic from student 
 exports.update_demand = function(id,receiveid,title,content) {
     
   db.prepare('UPDATE demand SET sendid = @id,receiveid = @receiveid,title = @title, content = @content WHERE id = ?').run(id);
@@ -62,8 +54,12 @@ exports.login = function(email, password) {
 }
 
 exports.new_user = function(firstname,lastname,email, password) {
-  let result = db.prepare('INSERT INTO user (firstname,lastname,email, password) VALUES (?,?,?, ?)').run(firstname,lastname,email, password);
+  let result = db.prepare('INSERT INTO users (firstname,lastname,email, password) VALUES (?,?,?, ?)').run(firstname,lastname,email, password);
   return result.lastInsertRowid;
 }
+/*exports.new_user = function(user, password) {
+  let result = db.prepare('INSERT INTO user (name, password) VALUES (?, ?)').run(user, password);
+  return result.lastInsertRowid;
+}*/
 
 
