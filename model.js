@@ -38,12 +38,8 @@ exports.create_demand = function(id, receiveemail, title,content) {
 exports.update_status = function(id){
     let check = db.prepare('SELECT status FROM demand WHERE id = receiveid').get(id);
     // insert into demand status has changed
-    
-    
+
 }
-
-
-
 
 
 //change topic from student

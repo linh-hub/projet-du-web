@@ -1,14 +1,29 @@
-{{> header}}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page d'identification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <form>
+    <h1>Se connecter</h1>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
 
-  <div class="jumbotron mt-5">
-    <div class="container">
-      <h1 class="display-3">Se connecter</h1>
-      <form action="/login" method="post">
-        <input class="form-control mb-2" type="text" name="user" placeholder="Nom d'utilisateur">
-        <input class="form-control mb-2" type="password" name="password" placeholder="Mot de passe">
-        <input class="form-control btn btn-primary" type="submit" value="Se connecter">
-      </form>
+    <label for="password"><b>Mot de passe</b></label>
+    <input type="password" placeholder="Entrer votre mot de passe" name="password" id="password" minlength="8" required>
+
+    <button type="submit">Se connecter</button>
+    <div class="options">
+      <a href="new_user.html.">S'inscrire</a>
+
     </div>
-  </div>
-
-{{> footer}}
+    <div class="checkbox">
+      <input type="checkbox" id="remember-me" name="remember-me">
+      <label for="remember-me">Se souvenir de moi</label>
+    </div>
+  </form>
+</div>
+</body>
+</html>

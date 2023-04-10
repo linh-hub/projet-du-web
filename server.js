@@ -126,7 +126,4 @@ app.post('/login', (req, res) => {
     res.redirect('/');
   });
 
- 
-
-  
   app.listen(3003, () => console.log('listening on http://localhost:3000'));

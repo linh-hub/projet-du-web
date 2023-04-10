@@ -1,11 +1,72 @@
-{{> header}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'accueil - Université</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
 
-  <div class="jumbotron mt-5">
-    <div class="container">
-      <h1 class="display-3">Cuisiner c'est bon pour la santé</h1>
+        }
 
-      <img class="img-fluid" src="https://pageperso.lis-lab.fr/benoit.favre/tp-web/images/kitchen.jpg">
-    </div>
-  </div>
+        header {
+            background-color: #2c3e50;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-{{> footer}}
+        }
+
+        header img {
+            max-height: 70px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 50px;
+            width: 50%;
+           margin: 100px auto;
+            padding: 30px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    a {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #2c3e50;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+
+        a:hover {
+            background-color: #34495e;
+
+
+        }
+    </style>
+</head>
+<body>
+<header>
+  <img src="amu.jpg" alt="Logo Université">
+</header>
+
+<h1>Bienvenue à  sur l'application</h1>
+<div class="container">
+  <a href="login.html">Se connecter</a>
+</div>
+</body>
+</html>

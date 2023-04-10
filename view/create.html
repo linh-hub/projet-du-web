@@ -1,20 +1,74 @@
-{{> header}}
-  <form action="/create" method="post">
-    <div class="row row-cols-1 row-cols-sm-2">
-      <div class="col">
-        <h1> Créer une nouvelle recette </h1>
-        <p>Titre : <input class="form-control" type="text" name="title"></p>
-        <p>Description : <br> <textarea class="form-control" name="description"></textarea></p>
-        <p>Durée : <input class="form-control" type="text" name="duration"></p>
-        <p>Image : <input class="form-control" type="text" name="img"></p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>sujets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
 
-        <h2> Ingrédients (liste à tirets)</h2>
-        <p><textarea class="form-control" name="ingredients"></textarea></p>
-        <h2> Étapes (liste à tirets)</h2>
-        <p><textarea class="form-control" name="stages"></textarea></p>
+        }
 
-        <input class="form-control btn btn-primary" type="submit" value="Créer">
-      </div>
-    </div>
-  </form>
-{{> footer}}
+        #container {
+            width: 50%;
+            margin: 100px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color:  #2c3e50;;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1>subjet</h1>
+    <form>
+        <label for="sujet">Subjet :</label>
+        <input type="text" id="sujet" name="sujet" placeholder="theme">
+
+        <label for="resume">Résumé :</label>
+        <textarea id="resume" name="resume" placeholder="Résumé du theme"></textarea>
+
+        <input type="submit" value="Soumettre">
+    </form>
+</div>
+</body>
+</html>
