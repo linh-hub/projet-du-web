@@ -4,91 +4,91 @@
     "id": "0",
     "firstname": "linh",
     "lastname": "pham",
-    "email": "linhpham@etu-amu.fr",
-    "role": "2"
+    "email": "linhpham@etu-amu.fr"
+    
   },
   {
     "id": "1",
     "firstname": "awa",
     "lastname": "boua",
-    "email": "awaboua@etu-amu.fr",
-    "role": "2"
+    "email": "awaboua@etu-amu.fr"
+    
   },
   {
     "id": "2",
     "firstname": "nam",
     "lastname": "nam",
-    "email": "namnam@etu-amu.fr",
-    "role": "2"
+    "email": "namnam@etu-amu.fr"
+    
   },
   {
     "id": "3",
     "firstname": "toto",
     "lastname": "tata",
-    "email": "tototata@etu-amu.fr",
-    "role": "2"
+    "email": "tototata@etu-amu.fr"
+    
   },
   {
     "id": "4",
     "firstname": "lele",
     "lastname": "han",
-    "email": "lelehan@etu-amu.fr",
-    "role": "2"
+    "email": "lelehan@etu-amu.fr"
+    
   },
   {
     "id": "5",
     "firstname": "panda",
     "lastname": "kungfu",
-    "email": "kungfupanda@etu-amu.fr",
-    "role": "2"
+    "email": "kungfupanda@etu-amu.fr"
+    
   },
   {
     "id": "6",
     "firstname": "lili",
     "lastname": "land",
-    "email": "lililand@etu-amu.fr",
-    "role": "2"
+    "email": "lililand@etu-amu.fr"
+    
   },
   {
     "id": "7",
     "firstname": "nathan",
     "lastname": "mufuta",
-    "email": "nathan@etu-amu.fr",
-    "role": "2"
+    "email": "nathan@etu-amu.fr"
+    
   },
   {
     "id": "8",
     "firstname": "shantanu",
     "lastname": "Das",
-    "email": "shantanu.das@univ-amu.fr",
-    "role": "1"
+    "email": "shantanu.das@univ-amu.fr"
+    
   },
   {
     "id": "9",
     "firstname": "thomas",
     "lastname": "schatz",
-    "email": "thomas.schatz@univ-amu.fr",
-    "role": "1"
+    "email": "thomas.schatz@univ-amu.fr"
+    
   },
   {
     "id": "10",
     "firstname": "soumeya",
     "lastname": "hernane",
-    "email": "soumeya.hernane@univ-amu.fr",
-    "role": "1"
+    "email": "soumeya.hernane@univ-amu.fr"
+    
   },
   {
     "id": "11",
     "firstname": "François",
     "lastname": "hamonic",
-    "email": "francois.hamonic@univ-amu.fr",
-    "role": "1"
+    "email": "francois.hamonic@univ-amu.fr"
+    
   },
   {
     "id": "12",
     "firstname": "nathan",
     "lastname": "lhote",
-    "email": "nathan.lhote@univ-amu.fr",
-    "role": "1"
+    "email": "nathan.lhote@univ-amu.fr"
+    
   }
 ]
