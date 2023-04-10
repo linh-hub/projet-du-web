@@ -23,12 +23,12 @@ exports.create = function() {
    //find in user where email = receiveemail -> get id -> this id will be receiveid in demand table
     
     
-    db.prepare('INSERT INTO demand (sendid, receiveid,title, content) VALUES (@sendid,@receiveid,@title, @content)').run(demand).lastInsertRowid;
+    db.prepare('INSERT INTO demands (sendid, receiveid,title, content) VALUES (@sendid,@receiveid,@title, @content)').run(demand).lastInsertRowid;
  
 }
 //update status from id(teacher approve the idea)
 exports.update_status = function(id){
-    let check = db.prepare('UPDATE status FROM demand WHERE id = receiveid').get(id);
+    let check = db.prepare('UPDATE status FROM demands WHERE id = receiveid').get(id);
     // insert into demand status has changed
 
 }
@@ -37,18 +37,18 @@ exports.update_status = function(id){
 //change topic from student 
 exports.update_demand = function(id,receiveid,title,content) {
     
-  db.prepare('UPDATE demand SET sendid = @id,receiveid = @receiveid,title = @title, content = @content WHERE id = ?').run(id);
+  db.prepare('UPDATE demands SET sendid = @id,receiveid = @receiveid,title = @title, content = @content WHERE id = ?').run(id);
   
 }
 
 //delete demand from id
 exports.delete = function(id) {
-  db.prepare('DELETE FROM demand WHERE id = ?').run(id);
+  db.prepare('DELETE FROM demands WHERE id = ?').run(id);
   
 }
 
 exports.login = function(email, password) {
-  let result = db.prepare('SELECT id FROM user WHERE email = ? AND password = ?').get(email, password);
+  let result = db.prepare('SELECT id FROM users WHERE email = ? AND password = ?').get(email, password);
   if (result === undefined) return -1;
   return result.id;
 }

@@ -5,8 +5,8 @@
     "firstname": "linh",
     "lastname": "pham",
     "email": "linhpham@etu-amu.fr",
-    "role": "student",
-    "password":"12345678"
+    "role": "student"
+    
     
   },
   {
@@ -14,16 +14,14 @@
     "firstname": "awa",
     "lastname": "boua",
     "email": "awaboua@etu-amu.fr",
-    "role": "student",
-    "password":"12345678"
+    "role": "student"
   },
   {
     "id": "7",
     "firstname": "nathan",
     "lastname": "mufuta",
     "email": "nathan@etu-amu.fr",
-    "role": "student",
-    "password":"12345678"
+    "role": "student"
     
   },
   {
@@ -31,17 +29,14 @@
     "firstname": "shantanu",
     "lastname": "Das",
     "email": "shantanu.das@univ-amu.fr",
-    "role": "student",
-    "password":"12345678"
-    
+    "role": "student"
   },
   {
     "id": "9",
     "firstname": "thomas",
     "lastname": "schatz",
     "email": "thomas.schatz@univ-amu.fr",
-    "role": "teacher",
-    "password":"12345678"
+    "role": "teacher"
     
   },
   {
@@ -49,8 +44,7 @@
     "firstname": "soumeya",
     "lastname": "hernane",
     "email": "soumeya.hernane@univ-amu.fr",
-    "role": "teacher",
-    "password":"12345678"
+    "role": "teacher"
     
   },
   {
@@ -58,8 +52,7 @@
     "firstname": "François",
     "lastname": "hamonic",
     "email": "francois.hamonic@univ-amu.fr",
-    "role": "teacher",
-    "password":"12345678"
+    "role": "teacher"
     
   },
   {
@@ -67,8 +60,7 @@
     "firstname": "nathan",
     "lastname": "lhote",
     "email": "nathan.lhote@univ-amu.fr",
-    "role": "teacher",
-    "password":"12345678"
+    "role": "teacher"
     
   }
 ]
