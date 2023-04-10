@@ -1,52 +1,20 @@
-{
-    "0": {
-      "id": "0",
-      "sendid": 1,
-      "receiveid": 8,
-      "title": "music app",
-      "content": "an app for listening music ",
-      "status": 0
-      
-    },
-    "1": {
-        "id": "1",
-        "sendid": 2,
-        "receiveid": 9,
-        "title": "map app",
-        "content": "an app like google map",
-        "status": 0
-    },
-    "2": {
-        "id": "2",
-        "sendid": 3,
-        "receiveid": 8,
-        "title": "food app",
-        "content": "provide recipies",
-        "status": 0
-    },
-    "3": {
-        "id": "3",
-        "sendid": 4,
-        "receiveid": 8,
-        "title": "game",
-        "content": "flapy bird",
-        "status": 0
-      },
-      "4": {
-        "id": "4",
-        "sendid": "8",
-        "receiveid": "1",
-        "title": "music app",
-        "content": "an app for listening music ",
-        "status": 0
-      },
-      "5": {
-        "id": "5",
-        "sendid": "9",
-        "receiveid": "2",
-        "title": "map app",
-        "content": "an app like google map",
-        "status": 1
-      }
-      
-}
+[
+  {
+    "userid": 1,
+    "title": "ezaeazea",
+    "content": "azeazeza",
+    "status": false
+  },
+  {
+    "userid": 2,
+    "title": "zaeaaze",
+    "content": "aezaeaz",
+    "status": true
+  },
+  {
+    "userid": 3,
+    "title": "Fazeazeza",
+    "content": "azezaeazezae",
+    "status": false
+  }
+]
