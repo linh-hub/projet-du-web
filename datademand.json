@@ -1,5 +1,5 @@
-{
-  "0": {
+[
+  {
     "id": "0",
     "sendid": 1,
     "receiveid": 8,
@@ -8,7 +8,7 @@
     "status": 0
 
   },
-  "1": {
+  {
       "id": "1",
       "sendid": 2,
       "receiveid": 9,
@@ -16,7 +16,7 @@
       "content": "an app like google map",
       "status": 0
   },
-  "2": {
+  {
       "id": "2",
       "sendid": 3,
       "receiveid": 8,
@@ -24,7 +24,7 @@
       "content": "provide recipies",
       "status": 0
   },
-  "3": {
+  {
       "id": "3",
       "sendid": 4,
       "receiveid": 8,
@@ -32,7 +32,7 @@
       "content": "flapy bird",
       "status": 0
     },
-    "4": {
+    {
       "id": "4",
       "sendid": "8",
       "receiveid": "1",
@@ -40,7 +40,7 @@
       "content": "an app for listening music ",
       "status": 0
     },
-    "5": {
+    {
       "id": "5",
       "sendid": "9",
       "receiveid": "2",
@@ -49,4 +49,4 @@
       "status": 1
     }
 
-}
+  ]
