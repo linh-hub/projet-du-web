@@ -1,20 +1,38 @@
 [
   {
-    "userid": 1,
-    "title": "ezaeazea",
-    "content": "azeazeza",
-    "status": false
+    "id": "0",
+    "sendid": 1,
+    "receiveid": 8,
+    "title": "music app",
+    "content": "an app for listening music ",
+    "status": 0
+
+  },
+  
+  {
+      "id": "2",
+      "sendid": 3,
+      "receiveid": 8,
+      "title": "food app",
+      "content": "provide recipies",
+      "status": 0
   },
   {
-    "userid": 2,
-    "title": "zaeaaze",
-    "content": "aezaeaz",
-    "status": true
-  },
-  {
-    "userid": 3,
-    "title": "Fazeazeza",
-    "content": "azezaeazezae",
-    "status": false
-  }
+      "id": "3",
+      "sendid": 4,
+      "receiveid": 8,
+      "title": "game",
+      "content": "flapy bird",
+      "status": 0
+    },
+    {
+      "id": "4",
+      "sendid": "8",
+      "receiveid": "1",
+      "title": "music app",
+      "content": "an app for listening music ",
+      "status": 0
+    }
+    
+
 ]

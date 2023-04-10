@@ -1,23 +1,66 @@
 [
+  
   {
-    "id": 1,
-    "firstname": "qsdsq",
-    "lastname": "dsqdfsdfsddfssqd",
-    "email": "sdqdqs",
-    "role": 1
+    "id": "0",
+    "firstname": "linh",
+    "lastname": "pham",
+    "email": "linhpham@etu-amu.fr",
+    "role": "student"
+    
+    
   },
   {
-    "id":2,
-    "firstname": "dsqdqs",
-    "lastname": "qdsqdsq",
-    "email": "qdqsddqsd",
-    "role": 2
+    "id": "1",
+    "firstname": "awa",
+    "lastname": "boua",
+    "email": "awaboua@etu-amu.fr",
+    "role": "student"
   },
   {
-    "id":3,
-    "firstname": "dqsdq",
-    "lastname": "dqdsqdza",
-    "email": "dsqdqs",
-    "role": 1
+    "id": "7",
+    "firstname": "nathan",
+    "lastname": "mufuta",
+    "email": "nathan@etu-amu.fr",
+    "role": "student"
+    
+  },
+  {
+    "id": "8",
+    "firstname": "shantanu",
+    "lastname": "Das",
+    "email": "shantanu.das@univ-amu.fr",
+    "role": "student"
+  },
+  {
+    "id": "9",
+    "firstname": "thomas",
+    "lastname": "schatz",
+    "email": "thomas.schatz@univ-amu.fr",
+    "role": "teacher"
+    
+  },
+  {
+    "id": "10",
+    "firstname": "soumeya",
+    "lastname": "hernane",
+    "email": "soumeya.hernane@univ-amu.fr",
+    "role": "teacher"
+    
+  },
+  {
+    "id": "11",
+    "firstname": "François",
+    "lastname": "hamonic",
+    "email": "francois.hamonic@univ-amu.fr",
+    "role": "teacher"
+    
+  },
+  {
+    "id": "12",
+    "firstname": "nathan",
+    "lastname": "lhote",
+    "email": "nathan.lhote@univ-amu.fr",
+    "role": "teacher"
+    
   }
 ]
