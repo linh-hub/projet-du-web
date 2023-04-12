@@ -17,6 +17,8 @@ app.use(cookieSession({
   secret: 'mot-de-passe-du-cookie',
 }));
 
+app.use(express.static('public'));
+
 app.engine('html', mustache());
 app.set('view engine', 'html');
 app.set('views', './views');
@@ -39,7 +41,18 @@ app.use(function(req, res, next) {
 })
 
 app.post('/login', (req, res) => {
-    const student = model.login(req.body.users, req.body.password);
+    const student = model.login(req.body.email, req.body.password);
+    if (student != -1) {
+      req.session.user = student;
+      req.session.email = req.body.email;
+      res.redirect('/');
+    } else {
+      res.redirect('error');
+    }
+  });
+  
+  /*app.post('/new_user', (req, res) => {
+    const user = model.new_user( req.body.email,req.body.password);
     if (user != -1) {
       req.session.user = user;
       req.session.email = req.body.email;
@@ -47,15 +60,16 @@ app.post('/login', (req, res) => {
     } else {
       res.redirect('/login');
     }
-  });
+  });*/
   
   app.post('/new_user', (req, res) => {
-    const user = model.new_user(req.body.firstname, req.body.lastname, req.body.email);
+    const user = model.new_user( req.body.email,req.body.password,req.body.role);
     if (user != -1) {
       req.session.user = user;
-      req.session.firstname = firstname;
-      req.session.lastname = req.body.lastname;
       req.session.email = req.body.email;
+      req.session.password = req.body.password;
+      req.session.role = req.body.role;
+
       res.redirect('/');
     } else {
       res.redirect('/');
@@ -110,10 +124,10 @@ app.post('/login', (req, res) => {
     };
   }
   
-  app.post('/create', is_authenticated, (req, res) => {
+  /*app.post('/create', is_authenticated, (req, res) => {
     let id = model.create(post_data_to_demand(req));
     res.redirect('/read/' + id);
-  });
+  });*/
   
   app.post('/update/:id', is_authenticated, (req, res) => {
     let id = req.params.id;
@@ -126,4 +140,23 @@ app.post('/login', (req, res) => {
     res.redirect('/');
   });
 
-  app.listen(3003, () => console.log('listening on http://localhost:3000'));
+   // Enregistrement d'un rdv
+  app.post('/create', (req, res) => {
+
+  // Extraire les données du formulaire de req.body et les stocker dans des variables    
+    let title = req.body.title;
+    let content= req.body.content;
+    
+
+  const succes= model.creat(title,content);
+
+  if(succes){
+    
+    res.redirect('/');
+  
+  }
+  else{ res.send('error'); }
+  
+});
+
+  app.listen(3002, () => console.log('listening on http://localhost:3000'));

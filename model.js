@@ -6,17 +6,17 @@ const Sqlite = require('better-sqlite3');
 let db = new Sqlite('db.sqlite');
 
 //read demand form id(student version)
-exports.get_demand_list_student_by_id_student = (id) => {
+exports.read = (id) => {
   let found = db.prepare('SELECT role FROM users WHERE id = ?').get(id);
   if (found == 2) {
-    found.demand = db.prepare('SELECT * FROM demand WHERE sendid = ? ').all(id);
+    found.demand = db.prepare('SELECT * FROM subject WHERE sendid = ? ').all(id);
     return found;
   } else {
     return null;
   }
 };
 //read demand from id(teacher version)
-exports.read_demand_teacher = (id) => {
+/*exports.read_demand_teacher = (id) => {
     let found = db.prepare('SELECT role FROM users WHERE id = ?').get(id);
     if (found == 1) {
       found.demand = db.prepare('SELECT * FROM demand WHERE receiveid = ? ').all(id);
@@ -26,13 +26,19 @@ exports.read_demand_teacher = (id) => {
     }
   };
 //create a demand from id(student)
-exports.create_demand = function(id, receiveemail, title,content) {
-   //find in user where email = receiveemail -> get id -> this id will be receiveid in demand table
-    
-    
-    db.prepare('INSERT INTO demand (sendid, receiveid,title, content) VALUES (@sendid,@receiveid,@title, @content)').run(demand).lastInsertRowid;
- 
+/*exports.create = function(title,content) {
+   //find in user where email = receiveemail -> get id -> this id will be receiveid in demand table 
+    db.prepare('INSERT INTO subject (title, content) VALUES (@title, @content)').run(subject).lastInsertRowid;
+
+}*/
+
+exports.creat = function(title,content) {
+  const sub = db.prepare('INSERT INTO subject (title,content) VALUES (?, ?)');
+  let result= sub.run(title,content);
+  return result.lastInsertRowid
 }
+
+
 //update status from id(teacher approve the idea)
 exports.update_status = function(id){
     let check = db.prepare('SELECT status FROM demand WHERE id = receiveid').get(id);
@@ -60,8 +66,8 @@ exports.login = function(email, password) {
   return result.id;
 }
 
-exports.new_user = function(firstname,lastname,email, password) {
-  let result = db.prepare('INSERT INTO user (firstname,lastname,email, password) VALUES (?,?,?, ?)').run(firstname,lastname,email, password);
+exports.new_user = function(email, password,role) {
+  let result = db.prepare('INSERT INTO users (email, password,role) VALUES (?, ?,?)').run(email, password,role);
   return result.lastInsertRowid;
 }
 

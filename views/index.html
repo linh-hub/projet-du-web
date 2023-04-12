@@ -51,6 +51,8 @@
             justify-content: center;
             align-items: center;
             height: 10vh;
+
+        }
         
 
         a:hover {
@@ -62,13 +64,21 @@
 </head>
 <body>
 <header>
-  <img src="amu.jpg" alt="Logo Université">
+  <img src="../image/amu.jpg" alt="Logo Université">
 </header>
 
 <h1>Bienvenue   sur l'application</h1>
 <div class="container">
-    <form action="/login" method="GET">
-        <a href="views/login.html">Se connecter</a>
+    {{#authenticated}}
+    <a href="/create">Create a project</a>
+    <a href="/read">Read your project</a>
+    <a href="/logout">Logout</a>
+    {{/authenticated}}
+
+    <form action="/login" method="post">
+        {{^authenticated}}
+        <a href="/login">Se connecter</a>
+        {{/authenticated}}
     </form>
 </div>
 </body>

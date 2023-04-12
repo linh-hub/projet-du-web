@@ -60,12 +60,12 @@
 <body>
 <div id="container">
     <h1>subjet</h1>
-    <form>
+    <form action="/create" method="post">
         <label for="sujet">Subjet :</label>
-        <input type="text" id="sujet" name="sujet" placeholder="theme">
+        <input type="text" id="title" name="title" placeholder="theme">
 
         <label for="resume">Résumé :</label>
-        <textarea id="resume" name="resume" placeholder="Résumé du theme"></textarea>
+        <textarea id="content" name="content" placeholder="Résumé du theme"></textarea>
 
         <input type="submit" value="Soumettre">
     </form>
