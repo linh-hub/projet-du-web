@@ -10,6 +10,7 @@ exports.read = (id) => {
   let found = db.prepare('SELECT role FROM users WHERE id = ?').get(id);
   if (found == 2) {
     found.demand = db.prepare('SELECT * FROM subject WHERE sendid = ? ').all(id);
+    
     return found;
   } else {
     return null;
@@ -61,7 +62,7 @@ exports.delete = function(id) {
 }
 
 exports.login = function(email, password) {
-  let result = db.prepare('SELECT id FROM user WHERE email = ? AND password = ?').get(email, password);
+  let result = db.prepare('SELECT id FROM users WHERE email = ? AND password = ?').get(email, password);
   if (result === undefined) return -1;
   return result.id;
 }
